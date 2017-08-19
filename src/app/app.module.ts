@@ -13,7 +13,12 @@ import { HeroesComponent } from './heroes/heroes.component';
     HeroDetailComponent,
     HeroesComponent,
   ],
-  imports: [
+  imports: [RouterModule.forRoot([
+  {
+    path: 'heroes',
+    component: HeroesComponent
+  }
+]),
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
